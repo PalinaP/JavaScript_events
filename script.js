@@ -103,18 +103,36 @@ for (let count = 0; count <= l-1; count++){
 
 
 
-
 //************************
 // Fonctionnalité 7 :
 //************************
 
+let rowEl = document.getElementsByClassName("row")[1];
+let cards = document.getElementsByClassName("col-md-4");
+
+let rightButton = document.getElementsByClassName("btn btn-secondary my-2")[0];
+
+rightButton.addEventListener("click",function(){
+  rowEl.insertBefore(cards[5], cards[0]);
+}
+);
 
 
+//************************
+// Fonctionnalité 8 :
+//************************
+
+let leftButton = document.getElementsByClassName("btn btn-primary my-2")[0];
+
+leftButton.addEventListener("click",function(event){
+  event.preventDefault();
+}
+);
 
 
 
 
 
 //************************
-// Fonctionnalité 8 :
+// Fonctionnalité 9 :
 //************************
