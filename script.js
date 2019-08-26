@@ -77,3 +77,44 @@ bodyEl.addEventListener("click",function(){
 //************************
 // Fonctionnalité 6 :
 //************************
+
+let viewButtons = document.getElementsByClassName("btn btn-sm btn-success");
+let images = document.getElementsByClassName("card-img-top");
+let cardTexts = document.getElementsByClassName("card-text");
+
+let l = viewButtons.length
+
+for (let count = 0; count <= l-1; count++){
+  viewButtons[count].addEventListener("mouseover",function(){
+    if (cardTexts[count].style.display === "none") {
+    cardTexts[count].style.display = "block";
+    } else {
+    cardTexts[count].style.display = "none";
+    }
+
+    if (images[count].style.width === "20%") {
+    images[count].style.width = "100%";
+    } else {
+    images[count].style.width = "20%";
+    }
+  }
+  );
+}
+
+
+
+
+//************************
+// Fonctionnalité 7 :
+//************************
+
+
+
+
+
+
+
+
+//************************
+// Fonctionnalité 8 :
+//************************
